@@ -1,7 +1,7 @@
 # 🍎 Decoding Apple (AAPL): The Earnings vs. Market Reaction Paradox
 
 ### 🎯 Objective
-A foundational assumption in retail investing is that beating quarterly earnings estimates results in a stock price surge. To test this hypothesis, I built a time-series analysis engine focused exclusively on **Apple Inc. (AAPL)**, evaluating how the world's most scrutinized stock actually reacts to its own financial success.
+It's a common assumption in retail investing that beating quarterly earnings estimates will automatically trigger a stock price surge. To find out if that's actually true, I built a time-series analysis engine focused specifically on **Apple Inc. (AAPL)**, looking at how the world's most closely-watched stock really reacts to its own financial success.
 
 The goal of this project was to bypass market noise and statistically measure the true stock sentiment surrounding Apple's last 8 quarters of earnings reports.
 
@@ -13,10 +13,8 @@ To ensure data accuracy and avoid API paywalls, I engineered a pipeline using Py
 * **The 4-Day Window:** I calculated the percentage change in Apple's closing price from **1 day prior** to the earnings release to **3 days post-release**, isolating the immediate market reaction.
 
 ```python
-# Core logic: Isolating Apple's specific trading window surrounding earnings
+# Isolating Apple's specific trading window surrounding earnings
 aapl_stock = yf.Ticker('AAPL')
-
-# ... [extraction logic] ...
 
 # Calculating the precise market reaction window
 price_before = df_prices.loc[closest_idx - 1, 'Close']
