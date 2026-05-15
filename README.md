@@ -25,7 +25,7 @@ pct_change = ((price_after - price_before) / price_before) * 100
 ```
 ### Visualization 
 
-![alt text](images/apple.png)
+![alt text](images\apple.png)
 ### 💡 Key Insights: The Apple Paradox
 By analyzing the statistical relationship between AAPL's reported earnings and its subsequent stock movement, I uncovered a massive disconnect between company performance and market reaction:
 
